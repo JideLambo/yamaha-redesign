@@ -1,0 +1,70 @@
+.navbar-inverse {
+    border-color: transparent;
+}
+nav {
+    background: $bg-color !important;
+    height: 100px;
+    border-radius: 0 !important;
+    border-top: 0!important;
+    border-bottom: 1px solid #dadfe6 !important;
+      @media screen and (max-width: $break-small) {
+          height:auto;
+      }
+    
+    .navbar-brand {
+        height: 100px;
+        padding: 0;
+        @media screen and (max-width: $break-small) {
+          height: 50px;
+        }
+
+        img {
+            top: 0;
+          @media screen and (max-width: $break-small) {
+              width: 50%;
+          }    
+        }
+    }
+    
+    .navbar-menu-list {
+        text-transform: uppercase;
+        
+        .navbar-left > li > a {
+            font-size: 16px;
+            font-weight: 500;
+            color: $heading-color;
+            padding: 38px 20px;
+            
+            @media screen and (max-width: $break-small) {
+                font-size: 14px;
+                padding: 14px 20px;
+                font-weight: 400;
+            }
+        }
+        .navbar-right > li > a {
+            font-size: 12px;
+            font-weight: 500;
+            color: $heading-color;
+            padding: 38px 30px;
+            
+            @media screen and (max-width: $break-small) {
+                padding: 14px 20px;
+                font-weight: 400;
+            }
+        }
+        .navbar-left .active a, .navbar-left a:hover, .navbar-right .active a, .navbar-right a:hover{
+            background-color:transparent !important;
+            color: $heading-color !important;
+            border-bottom: 4px solid $primary-color;
+        }
+    }
+}
+.navbar-toggle {
+    @media screen and (max-width: $break-small) {
+      border-color: $primary-color !important;
+    }
+    
+    .icon-bar {
+        background-color: $primary-color !important;
+    }
+}
